@@ -58,7 +58,7 @@ src: url('Franchise-Bold-hinted.ttf');
 }
 
 body {
-	background: #0F1516;
+	background: #FAFAFA;
 }
 
 #container {
@@ -72,21 +72,23 @@ header {
 	display: block;
 	min-width: 960px;
 	width: 100%;
-	height: 100px;;
-	font-family: Franchise;
+	height: 100px;
+	font-family: Oswald;
 	color: #31917A;
 	position: relative;
 }
 
 h1 {
-	font-size: 80px;
-	font-weight: bold;
+	font-size: 60px;
+	letter-spacing: 3px;
 	margin: 10px 0px -15px 20px;
+	font-weight: 700;
 }
 
 h2 {
-	font-size: 30px;
-	margin-left: 124px;
+	font-size: 22px;
+	margin-left: 247px;
+	margin-top: 12px;
 }
 
 #nav{
@@ -94,13 +96,6 @@ h2 {
 	font-size: 20px;
 	top: 40px;
 	right: 30px;
-}
-
-#connect {
-	float: right;
-	position: absolute;
-	right: 20px;
-	bottom: 0px;
 }
 
 #nav li {
@@ -126,32 +121,24 @@ ul li {
 }
 
 #content div {
-	height: 600px
 }
 
 #about {
-	background: white;
 	width: 100%;
 	margin: 0px auto;
 }
 
 #resume {
-	background: blue;
 }
 
-#portfolio {
-	background: red;
-}
 
 #about div {
-	background: white;
-	margin: 20px;
-	width: 225px;
-	height: 250px;
 	display: inline-block;
-	border: 2px;
+	width: 190px;
+	height: 250px;
+	margin: 25px 18px;
 	border-radius: 5px;
-	text-align: justify;
+	text-align: center;
 }
 
 #about img {
@@ -160,9 +147,43 @@ ul li {
 	margin: 15px auto;
 }
 
+#portfolio img {
+	display: block;
+	margin: 25px auto;
+	border: 1px solid #50504A;
+}
+
+#porfolio img:hover> .details {
+	visibility: visible;
+}
+
+.details {
+	visibility: hidden;
+	text-align: center;
+	background: rgb(250, 250, 250, .8);
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 14px;
+	padding-top: 10px;
+}
+
 footer {
 	display: block;
+	position: relative;
 	bottom: 0px;
 	width: 100%;
 	height: 100px;
+}
+
+#connect {
+	float: right;
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
 }
